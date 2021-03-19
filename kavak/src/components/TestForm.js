@@ -1,5 +1,6 @@
 import React, {Fragment} from 'react';
 import {Form, Button} from 'react-bootstrap';
+import YearFilter from './YearFilter'
 
 const TestForm = () => {
      return (
@@ -22,8 +23,7 @@ const TestForm = () => {
                          <Form.Check type="checkbox" label="Check me out" />
                     </Form.Group>
                     <Form.Group>
-                         <Form.Label>Date</Form.Label>
-                         <Form.Control type="date" placeholder="Input Date"/>
+                         <YearFilter/>
                     </Form.Group>
                     <Button variant="primary" type="submit">
                          Submit
