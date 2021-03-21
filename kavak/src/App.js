@@ -1,6 +1,7 @@
 import './App.css';
 import TestForm from './components/TestForm';
 import VehicleCard from './components/VehicleCard';
+import YearFilter from './components/YearFilter';
 import {Container, Row, Col} from 'react-bootstrap';
 
 async function test() {
@@ -29,10 +30,11 @@ function App() {
           <TestForm/>
         </Col>
         <Col>
-          <VehicleCard
-          />
+          <VehicleCard/>
         </Col>
-        
+        <Col>
+          <YearFilter/>
+        </Col>
       </Row>
     </Container>
   );

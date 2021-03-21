@@ -4,7 +4,7 @@ import {Form, ToggleButton, ToggleButtonGroup, Col, Row, Container} from 'react-
 const YearFilter = () => {
      return (
           <Fragment>
-               <Form.Label>Year</Form.Label>
+               <Form.Label>Año</Form.Label>
                <Container>
                     <Row>
                          <Col>1 of 3</Col>
