@@ -1,11 +1,32 @@
 import React, {Fragment} from 'react';
-import {Form} from 'react-bootstrap';
+import {Form, Button, Col, Row, Container} from 'react-bootstrap';
 
 const YearFilter = () => {
      return (
           <Fragment>
                <Form.Label>Year</Form.Label>
-               <Form.Control type="range" min="-10" max="10" placeholder="Input Year"/>
+               <Container>
+                    <Row>
+                         <Col>1 of 3</Col>
+                         <Col>2 of 3</Col>
+                         <Col>3 of 3</Col>
+                    </Row>
+                    <Row>
+                         <Col>1 of 3</Col>
+                         <Col>2 of 3</Col>
+                         <Col>3 of 3</Col>
+                    </Row>
+                    <Row>
+                         <Col>1 of 3</Col>
+                         <Col>2 of 3</Col>
+                         <Col>3 of 3</Col>
+                    </Row>
+                    <Row>
+                         <Col>1 of 3</Col>
+                         <Col>2 of 3</Col>
+                         <Col></Col>
+                    </Row>
+               </Container>
           </Fragment>
      );
 }
