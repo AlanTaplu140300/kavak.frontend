@@ -32,6 +32,7 @@ function App() {
           <VehicleCard
           />
         </Col>
+        
       </Row>
     </Container>
   );
