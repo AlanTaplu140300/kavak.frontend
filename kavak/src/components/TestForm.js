@@ -31,6 +31,22 @@ const TestForm = () => {
                               <option value="2020">2020</option>
                          </Form.Control>
                     </Form.Group>
+                    <Form.Group controlId="">
+                         <Form.Label>Color</Form.Label>
+                         <Form.Control as="select">
+                              <option value="Negro">Negro</option>
+                              <option value="Blanco">Blanco</option>
+                              <option value="Rojo">Rojo</option>
+                              <option value="Amarillo">Amarillo</option>
+                              <option value="Gris">Gris</option>
+                              <option value="Azul">Azul</option>
+                              <option value="Cafe">Cafe</option>
+                              <option value="Verde">Verde</option>
+                              <option value="Plateado">Plateado</option>
+                              <option value="Dorado">Dorado</option>
+                              <option value="Otro">Otro</option>
+                         </Form.Control>
+                    </Form.Group>
                     <Form.Group>
                          <Form.Label>Kilometraje</Form.Label>
                          <Form.Control type="text" placeholder="Kilometraje" />
