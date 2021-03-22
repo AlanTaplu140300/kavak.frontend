@@ -2,6 +2,7 @@ import './App.css';
 import VehicleCard from './components/VehicleCard';
 import TestForm from './components/TestForm';
 import YearFilter from './components/YearFilter';
+import Header from './components/Header';
 import {Container, Row, Col} from 'react-bootstrap';
 
 async function test() {
@@ -25,17 +26,22 @@ function App() {
 
   return (
     
-    <Row>
-      <Col md={1}>
-      </Col>
-      <Col md={2}>
-        <TestForm/>
-      </Col>
-      <Col className="vehicles-container">
-        <VehicleCard/>
-        <YearFilter/>
-      </Col>
+    
+    <Container fluid className="mainConteiner">
+      <Header/>
+      <Row>
+        <Col md={1}>
+        </Col>
+        <Col md={3}>
+          <TestForm/>
+        </Col>
+        <Col className="vehicles-container">
+          <VehicleCard/>
+          <YearFilter/>
+        </Col>
       </Row>
+    </Container>
+    
   );
 }
 
