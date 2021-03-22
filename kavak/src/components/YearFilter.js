@@ -4,21 +4,20 @@ import {Form, ToggleButton, ToggleButtonGroup, Col, Row, Container} from 'react-
 const YearFilter = () => {
      return (
           <Fragment>
-               <Form.Label>Año</Form.Label>
                <Container>
+                    <Form.Label>Año</Form.Label>
                     <Row>
-                    
-                         <Col>
+                         <Col md="1">
                               <ToggleButtonGroup type="checkbox">
                                    <ToggleButton>2010</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
-                         <Col>
+                         <Col md="1">
                               <ToggleButtonGroup type="checkbox">
                                    <ToggleButton>2011</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
-                         <Col>
+                         <Col md="1">
                               <ToggleButtonGroup type="checkbox">
                                    <ToggleButton>2012</ToggleButton>
                               </ToggleButtonGroup>
@@ -26,17 +25,17 @@ const YearFilter = () => {
                     </Row>
                     <br/>
                     <Row>
-                         <Col>
+                         <Col md="1">
                               <ToggleButtonGroup type="checkbox">
                                    <ToggleButton>2013</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
-                         <Col>
+                         <Col md="1">
                               <ToggleButtonGroup type="checkbox">
                                    <ToggleButton>2014</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
-                         <Col>
+                         <Col md="1">
                               <ToggleButtonGroup type="checkbox">
                                    <ToggleButton>2015</ToggleButton>
                               </ToggleButtonGroup>
@@ -44,17 +43,17 @@ const YearFilter = () => {
                     </Row>
                     <br/>
                     <Row>
-                         <Col>
+                         <Col md="1">
                               <ToggleButtonGroup type="checkbox">
                                    <ToggleButton>2016</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
-                         <Col>
+                         <Col md="1">
                               <ToggleButtonGroup type="checkbox">
                                    <ToggleButton>2017</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
-                         <Col>
+                         <Col md="1">
                               <ToggleButtonGroup type="checkbox">
                                    <ToggleButton>2018</ToggleButton>
                               </ToggleButtonGroup>
@@ -62,12 +61,12 @@ const YearFilter = () => {
                     </Row>
                     <br/>
                     <Row>
-                         <Col>
+                         <Col md="1">
                               <ToggleButtonGroup type="checkbox">
                                    <ToggleButton>2019</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
-                         <Col>
+                         <Col md="1">
                               <ToggleButtonGroup type="checkbox">
                                    <ToggleButton>2020</ToggleButton>
                               </ToggleButtonGroup>
