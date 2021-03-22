@@ -1,7 +1,6 @@
 import './App.css';
 import VehicleCard from './components/VehicleCard';
 import TestForm from './components/TestForm';
-import VehicleCard from './components/VehicleCard';
 import YearFilter from './components/YearFilter';
 import {Container, Row, Col} from 'react-bootstrap';
 
@@ -25,19 +24,18 @@ function App() {
   //    .then(json => console.log(json))
 
   return (
-    <Container>
-      <Row>
-        <Col md="2">
-          <TestForm/>
-        </Col>
-        <Col className="vehicles-container">
-          <VehicleCard/>
-        </Col>
-        <Col>
-          <YearFilter/>
-        </Col>
+    
+    <Row>
+      <Col md={1}>
+      </Col>
+      <Col md={2}>
+        <TestForm/>
+      </Col>
+      <Col className="vehicles-container">
+        <VehicleCard/>
+        <YearFilter/>
+      </Col>
       </Row>
-    </Container>
   );
 }
 
