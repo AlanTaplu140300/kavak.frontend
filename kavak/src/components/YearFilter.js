@@ -7,23 +7,71 @@ const YearFilter = () => {
                <Form.Label>Año</Form.Label>
                <Container>
                     <Row>
-                         <Col>1 of 3</Col>
-                         <Col>2 of 3</Col>
-                         <Col>3 of 3</Col>
+                    
+                         <Col>
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton>2010</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
+                         <Col>
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton>2011</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
+                         <Col>
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton>2012</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
                     </Row>
+                    <br/>
                     <Row>
-                         <Col>1 of 3</Col>
-                         <Col>2 of 3</Col>
-                         <Col>3 of 3</Col>
+                         <Col>
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton>2013</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
+                         <Col>
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton>2014</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
+                         <Col>
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton>2015</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
                     </Row>
+                    <br/>
                     <Row>
-                         <Col>1 of 3</Col>
-                         <Col>2 of 3</Col>
-                         <Col>3 of 3</Col>
+                         <Col>
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton>2016</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
+                         <Col>
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton>2017</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
+                         <Col>
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton>2018</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
                     </Row>
+                    <br/>
                     <Row>
-                         <Col>1 of 3</Col>
-                         <Col>2 of 3</Col>
+                         <Col>
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton>2019</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
+                         <Col>
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton>2020</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
                          <Col></Col>
                     </Row>
                </Container>
