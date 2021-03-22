@@ -3,21 +3,72 @@ import {Form, Button} from 'react-bootstrap';
 import YearFilter from './YearFilter';
 import BrandAndModel from './BrandAndModel';
 
+import { Formik } from "formik";
+import * as yup from "yup";
+
+const { FMK } = Formik;
+
+const schema = yup.object().shape({
+  name: yup.string().required(),
+  year: yup.string().required(),
+  color: yup.string().required(),
+  km: yup.string().required(),
+  location: yup.string().required()
+});
+
 const TestForm = () => {
      return (
           <Fragment>
                <h2>Formulario de Venta Vehiculos</h2>
-               <Form>
+               <Formik
+               validationSchema={schema}
+               onSubmit={console.log}
+               initialValues={{
+               name: 'Versión',
+               year: '2010',
+               color: 'Color',
+               km: '0',
+               location: 'Ubicación'
+               }}>
+               {({
+                    handleSubmit,
+                    handleChange,
+                    handleBlur,
+                    isSubmitting,
+                    values,
+                    touched,
+                    isValid,
+                    isInvalid,
+                    errors,
+               }) => (
+               <Form onSubmit={handleSubmit}>
                     <Form.Group>
                          <BrandAndModel/>
                     </Form.Group>
                     <Form.Group>
                          <Form.Label>Versión</Form.Label>
-                         <Form.Control type="text" placeholder="Versión" />
+                         <Form.Control 
+                         type="text"
+                         placeholder="Versión"
+                         name="name"
+                         value={values.name}
+                         onChange={handleChange}
+                         onBlur={handleBlur}
+                         isInvalid={!!errors.name}
+                         />
+                    <Form.Control.Feedback type="invalid">Por favor ingrese una versión válida.</Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group controlId="">
                          <Form.Label>Año</Form.Label>
-                         <Form.Control as="select">
+                         <Form.Control as="select" 
+                         type="number"
+                         placeholder="Año"
+                         name="year"
+                         value={values.year}
+                         onChange={handleChange}
+                         onBlur={handleBlur}
+                         isInvalid={!!errors.year}
+                         >
                               <option value="2010">2010</option>
                               <option value="2011">2011</option>
                               <option value="2012">2012</option>
@@ -30,10 +81,19 @@ const TestForm = () => {
                               <option value="2019">2019</option>
                               <option value="2020">2020</option>
                          </Form.Control>
+                         <Form.Control.Feedback type="invalid">Por favor ingrese un año válido.</Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group controlId="">
                          <Form.Label>Color</Form.Label>
-                         <Form.Control as="select">
+                         <Form.Control as="select" 
+                         type="text"
+                         placeholder="Color"
+                         name="color"
+                         value={values.color}
+                         onChange={handleChange}
+                         onBlur={handleBlur}
+                         isInvalid={!!errors.color}
+                         >
                               <option value="Negro">Negro</option>
                               <option value="Blanco">Blanco</option>
                               <option value="Rojo">Rojo</option>
@@ -46,19 +106,41 @@ const TestForm = () => {
                               <option value="Dorado">Dorado</option>
                               <option value="Otro">Otro</option>
                          </Form.Control>
+                         <Form.Control.Feedback type="invalid">Por favor ingrese un color válido.</Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group>
                          <Form.Label>Kilometraje</Form.Label>
-                         <Form.Control type="text" placeholder="Kilometraje" />
+                         <Form.Control 
+                         type="number"
+                         placeholder="Kilometraje"
+                         name="km"
+                         min="0"
+                         value={values.km}
+                         onChange={handleChange}
+                         onBlur={handleBlur}
+                         isInvalid={!!errors.km}
+                         />
+                         <Form.Control.Feedback type="invalid">Por favor ingrese valores válidos.</Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group>
                          <Form.Label>Ubicación</Form.Label>
-                         <Form.Control placeholder="Ubicación" />
+                         <Form.Control
+                         type="text"
+                         placeholder="Ubicación"
+                         name="location"
+                         value={values.location}
+                         onChange={handleChange}
+                         onBlur={handleBlur} 
+                         isInvalid={!!errors.location}
+                         />
+                         <Form.Control.Feedback type="invalid">Por favor ingrese una ubicación válido.</Form.Control.Feedback>
                     </Form.Group>
-                    <Button variant="primary" type="submit">
+                    <Button variant="primary" type="submit" disabled={isSubmitting}>
                          Cotizar
                     </Button>
                </Form>
+               )}
+               </Formik>
           </Fragment>
      );
 }

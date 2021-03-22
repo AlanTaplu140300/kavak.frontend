@@ -1,7 +1,6 @@
 import './App.css';
 import VehicleCard from './components/VehicleCard';
 import TestForm from './components/TestForm';
-import VehicleCard from './components/VehicleCard';
 import YearFilter from './components/YearFilter';
 import {Container, Row, Col} from 'react-bootstrap';
 
