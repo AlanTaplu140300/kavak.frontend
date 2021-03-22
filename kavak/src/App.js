@@ -1,4 +1,5 @@
 import './App.css';
+import VehicleCard from './components/VehicleCard';
 import TestForm from './components/TestForm';
 import {Container, Row, Col} from 'react-bootstrap';
 
@@ -7,11 +8,13 @@ function App() {
   return (
     <Container>
       <Row>
-        <Col>
+        <Col md="2">
           <TestForm/>
         </Col>
-        <Col>
-        
+        <Col className="vehicles_container">
+          <VehicleCard/>
+          <VehicleCard/>
+          <VehicleCard/>
         </Col>
       </Row>
     </Container>

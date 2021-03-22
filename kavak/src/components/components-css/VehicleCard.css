@@ -1,0 +1,36 @@
+.vehicle_card{
+    display: inline-block !important;
+    max-width: calc(100% / 3) !important;
+    width: 100% !important;
+    max-height: 205px !important;
+    height: 100% !important;
+    background-size: cover;
+    background-position: 50% 50%;
+    box-sizing: border-box !important;
+}
+.vehicle_card .card-body{
+    padding: 0.3rem !important;
+}
+.vehicle_card .card-link{
+    margin-top: -0.5rem;
+    margin-bottom: 3.75rem;
+    font-size: 32px;
+    cursor: pointer;
+}
+.vehicle_card .card-text:last-child {
+	margin-top: -2.5rem;
+}
+.vehicle_card .card-text:first-child {
+    margin-top: 2.5rem;
+}
+div.vehicle_card * {
+    font-weight: 600;
+    text-shadow: rgba(0, 0, 0, 0.5) 1px 1px 1px;
+}
+div.vehicle_card .card-title{
+    font-size: 20.8px;
+    margin-bottom: 0px;
+}
+div.vehicle_card .special-size{
+    font-size: 13.6px;
+}
