@@ -4,6 +4,7 @@ import TestForm from './components/TestForm';
 import YearFilter from './components/YearFilter';
 import Header from './components/Header';
 import {Container, Row, Col} from 'react-bootstrap';
+import Transsmision from './components/Transsmision';
 
 async function test() {
   const response = await fetch('http://127.0.0.1:8000/api/car/');
@@ -38,6 +39,7 @@ function App() {
         <Col className="vehicles-container">
           <VehicleCard/>
           <YearFilter/>
+          <Transsmision/>
         </Col>
       </Row>
     </Container>
