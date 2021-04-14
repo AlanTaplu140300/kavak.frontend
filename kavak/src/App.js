@@ -5,6 +5,7 @@ import YearFilter from './components/YearFilter';
 import Header from './components/Header';
 import {Container, Row, Col} from 'react-bootstrap';
 import Transsmision from './components/Transsmision';
+import Kilometraje from './components/Kilometraje';
 
 async function test() {
   const response = await fetch('http://127.0.0.1:8000/api/car/');
@@ -40,6 +41,7 @@ function App() {
           <VehicleCard/>
           <YearFilter/>
           <Transsmision/>
+          <Kilometraje/>
         </Col>
       </Row>
     </Container>
