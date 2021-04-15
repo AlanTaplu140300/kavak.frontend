@@ -6,6 +6,9 @@ import Header from './components/Header';
 import {Container, Row, Col} from 'react-bootstrap';
 import Transsmision from './components/Transsmision';
 import Kilometraje from './components/Kilometraje';
+import BrandAndModel from './components/BrandAndModel';
+import Price from './components/Price';
+import Color from './components/Color';
 
 async function test() {
   const response = await fetch('http://127.0.0.1:8000/api/car/');
@@ -37,11 +40,16 @@ function App() {
         <Col md={3}>
           <TestForm/>
         </Col>
+      
         <Col className="vehicles-container">
           <VehicleCard/>
+          <Row>Filtros</Row>
+          <BrandAndModel/>
           <YearFilter/>
           <Transsmision/>
           <Kilometraje/>
+          <Price/>
+          <Color/>
         </Col>
       </Row>
     </Container>

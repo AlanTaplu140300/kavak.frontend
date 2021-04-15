@@ -13,7 +13,9 @@ const schema = yup.object().shape({
   year: yup.string().required(),
   color: yup.string().required(),
   km: yup.string().required(),
-  location: yup.string().required()
+  location: yup.string().required(),
+  brand: yup.string().required(),
+  carmodel: yup.string().required()
 });
 
 const TestForm = () => {
@@ -26,9 +28,11 @@ const TestForm = () => {
                initialValues={{
                name: 'Versión',
                year: '2010',
-               color: 'Color',
+               color: 'Negro',
                km: '0',
-               location: 'Ubicación'
+               location: 'Ubicación',
+               brand: 'Marca',
+               carmodel: 'Modelo'
                }}>
                {({
                     handleSubmit,
@@ -43,7 +47,25 @@ const TestForm = () => {
                }) => (
                <Form onSubmit={handleSubmit}>
                     <Form.Group>
-                         <BrandAndModel/>
+                         <Form.Label>Marca</Form.Label>
+                         <Form.Control type="text"
+                         placeholder="Marca"
+                         name="brand"
+                         value={values.brand}
+                         onChange={handleChange}
+                         isInvalid={!!errors.brand}
+                         />
+                         <Form.Control.Feedback type="invalid">Por favor ingrese una marca válida.</Form.Control.Feedback>
+                         <br/>
+                         <Form.Label>Modelo</Form.Label>
+                         <Form.Control type="text"
+                         placeholder="Modelo"
+                         name="carmodel"
+                         value={values.carmodel}
+                         onChange={handleChange}
+                         isInvalid={!!errors.carmodel}
+                         />
+                         <Form.Control.Feedback type="invalid">Por favor ingrese un modelo válido.</Form.Control.Feedback>
                     </Form.Group>
                     <Form.Group>
                          <Form.Label>Versión</Form.Label>

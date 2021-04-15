@@ -1,5 +1,6 @@
 import React from 'react';
 import Card from 'react-bootstrap/Card';
+import {Col} from 'react-bootstrap';
 import { Heart } from 'react-bootstrap-icons';
 import './components-css/VehicleCard.css';
 

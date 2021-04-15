@@ -3,25 +3,20 @@ import {Form} from 'react-bootstrap';
 import {Container, Row, Col} from 'react-bootstrap';
 
 
-const Kilometraje = () => {
-    
-    // const [ value, setValue ] = React.useState(25);
-    // const [ value2, setValue2 ] = React.useState(50);
-        
-        
+const Price = () => {
+
     return (
         <Fragment>
             <Form>
                 <br/>
-                <Form.Label>Kilometraje</Form.Label>
+                <Form.Label>Precio</Form.Label>
                 <Row>
                 <Col md={2}>
                     <Form.Control 
                     type="number"
                     placeholder="Mínimo"
-                    name="kmmin"
+                    name="preciomin"
                     min="0"
-                    max="100000"
                     />
                     <Form.Control.Feedback type="invalid">Por favor ingrese valores válidos.</Form.Control.Feedback>
                 </Col>
@@ -29,9 +24,8 @@ const Kilometraje = () => {
                     <Form.Control 
                     type="number"
                     placeholder="Máximo"
-                    name="kmmax"
+                    name="preciomax"
                     min="0"
-                    max="100000"
                     />
                     <Form.Control.Feedback type="invalid">Por favor ingrese valores válidos.</Form.Control.Feedback>
                 </Col>
@@ -40,6 +34,7 @@ const Kilometraje = () => {
             
         </Fragment>
     );
+
 };
 
-export default Kilometraje;
+export default Price;

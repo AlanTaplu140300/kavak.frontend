@@ -5,39 +5,22 @@ const YearFilter = () => {
      return (
           <Fragment>
                <Container>
+                    <br/>
                     <Form.Label>Año</Form.Label>
                     <Row>
                          <Col md="1">
                               <ToggleButtonGroup type="checkbox">
-                                   <ToggleButton>2010</ToggleButton>
+                                   <ToggleButton variant="outline-primary">2010</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
                          <Col md="1">
                               <ToggleButtonGroup type="checkbox">
-                                   <ToggleButton>2011</ToggleButton>
+                                   <ToggleButton variant="outline-primary">2011</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
                          <Col md="1">
                               <ToggleButtonGroup type="checkbox">
-                                   <ToggleButton>2012</ToggleButton>
-                              </ToggleButtonGroup>
-                         </Col>
-                    </Row>
-                    <br/>
-                    <Row>
-                         <Col md="1">
-                              <ToggleButtonGroup type="checkbox">
-                                   <ToggleButton>2013</ToggleButton>
-                              </ToggleButtonGroup>
-                         </Col>
-                         <Col md="1">
-                              <ToggleButtonGroup type="checkbox">
-                                   <ToggleButton>2014</ToggleButton>
-                              </ToggleButtonGroup>
-                         </Col>
-                         <Col md="1">
-                              <ToggleButtonGroup type="checkbox">
-                                   <ToggleButton>2015</ToggleButton>
+                                   <ToggleButton variant="outline-primary">2012</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
                     </Row>
@@ -45,17 +28,17 @@ const YearFilter = () => {
                     <Row>
                          <Col md="1">
                               <ToggleButtonGroup type="checkbox">
-                                   <ToggleButton>2016</ToggleButton>
+                                   <ToggleButton variant="outline-primary">2013</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
                          <Col md="1">
                               <ToggleButtonGroup type="checkbox">
-                                   <ToggleButton>2017</ToggleButton>
+                                   <ToggleButton variant="outline-primary">2014</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
                          <Col md="1">
                               <ToggleButtonGroup type="checkbox">
-                                   <ToggleButton>2018</ToggleButton>
+                                   <ToggleButton variant="outline-primary">2015</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
                     </Row>
@@ -63,12 +46,35 @@ const YearFilter = () => {
                     <Row>
                          <Col md="1">
                               <ToggleButtonGroup type="checkbox">
-                                   <ToggleButton>2019</ToggleButton>
+                                   <ToggleButton variant="outline-primary">2016</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
                          <Col md="1">
                               <ToggleButtonGroup type="checkbox">
-                                   <ToggleButton>2020</ToggleButton>
+                                   <ToggleButton variant="outline-primary">2017</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
+                         <Col md="1">
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton variant="outline-primary">2018</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
+                    </Row>
+                    <br/>
+                    <Row>
+                         <Col md="1">
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton variant="outline-primary">2019</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
+                         <Col md="1">
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton variant="outline-primary">2020</ToggleButton>
+                              </ToggleButtonGroup>
+                         </Col>
+                         <Col md="1">
+                              <ToggleButtonGroup type="checkbox">
+                                   <ToggleButton variant="outline-primary">2021</ToggleButton>
                               </ToggleButtonGroup>
                          </Col>
                          <Col></Col>

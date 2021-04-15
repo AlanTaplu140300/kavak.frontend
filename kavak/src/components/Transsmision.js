@@ -7,6 +7,7 @@ const Transsmision = () => {
      return (
           
           <Fragment>
+               <br/>
               <Col md="3">
                 <Form.Label>Transmición</Form.Label>
                 <Form.Control as="select">
@@ -15,7 +16,6 @@ const Transsmision = () => {
                     <option>Manual</option>
                     </Form.Control>
               </Col>
-              
           </Fragment>
      );
 }
