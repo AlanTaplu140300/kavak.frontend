@@ -4,6 +4,7 @@ import {Container} from 'react-bootstrap';
 import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Buy from "./components/Buy";
 import Home from "./components/Home";
+import Sell from "./components/Sell"
 
 
 
@@ -21,6 +22,9 @@ function App() {
           </Route>
           <Route path="/buy">
             <Buy/>
+          </Route>
+          <Route path="/sell">
+            <Sell/>
           </Route>
         </Switch>
       </Container>

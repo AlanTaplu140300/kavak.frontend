@@ -1,16 +1,31 @@
-import React, {Fragment} from 'react';
+import React, {Fragment, useEffect, useState} from 'react';
 import {Row, Col} from 'react-bootstrap';
-import $ from 'jquery';
+import BuyCars from './BuyCars';
 
 const Buy = () => {
-     fetch('http://127.0.0.1:8000/api/car/')
-     .then(response => response.json())
-     .then(data => console.log(data));
+
+     const [carros, guardarCarros] = useState([])
+     var filtro = "";
+     useEffect(()=>{
+          const consultarApi = async () => {
+               const url = `http://127.0.0.1:8000/api/car/1/get-cars/`;
+               const respuesta = await fetch(url);
+               const autos = await respuesta.json();
+               guardarCarros(autos)
+          }
+          consultarApi() 
+     },[filtro]);
+
      return (
           <Fragment>
                <Row>
-                    <Col>Soy uno</Col>
-                    <Col>Soy dos</Col>
+                    <Col xs={3}>Filtros</Col>
+
+                    <Col xs={9}>
+                         <BuyCars
+                              carros={carros}
+                         />
+                    </Col>
                </Row>
           </Fragment>
      );
